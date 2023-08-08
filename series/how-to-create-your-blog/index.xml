@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>how to create your blog on LADDER</title><link>https://hugo-ladder.pages.dev/series/how-to-create-your-blog/</link><description>Recent content in how to create your blog on LADDER</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>iguangzhengli@gmail.com (Guangzheng Li)</managingEditor><webMaster>iguangzhengli@gmail.com (Guangzheng Li)</webMaster><copyright>2023 GuangzhengLi All rights reserved</copyright><lastBuildDate>Sat, 20 Aug 2022 21:34:36 +0800</lastBuildDate><atom:link href="https://hugo-ladder.pages.dev/series/how-to-create-your-blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Ladder Guide</title><link>https://hugo-ladder.pages.dev/blog/ladder-guide/</link><pubDate>Sat, 20 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://hugo-ladder.pages.dev/blog/ladder-guide/</guid><description>&lt;p>This article is a link to all the tutorials.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>how to create your blog on LADDER</title><link>https://yumeminami.github.io/series/how-to-create-your-blog/</link><description>Recent content in how to create your blog on LADDER</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>iguangzhengli@gmail.com (Guangzheng Li)</managingEditor><webMaster>iguangzhengli@gmail.com (Guangzheng Li)</webMaster><copyright>2023 GuangzhengLi All rights reserved</copyright><lastBuildDate>Sat, 20 Aug 2022 21:34:36 +0800</lastBuildDate><atom:link href="https://yumeminami.github.io/series/how-to-create-your-blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Ladder Guide</title><link>https://yumeminami.github.io/blog/ladder-guide/</link><pubDate>Sat, 20 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://yumeminami.github.io/blog/ladder-guide/</guid><description>&lt;p>This article is a link to all the tutorials.&lt;/p>
 &lt;h2 id="basic-usage">Basic Usage&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://hugo-ladder.pages.dev/blog/quick-start/">Quick Start&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://hugo-ladder.pages.dev/blog/configurations/">Configurations&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://yumeminami.github.io/blog/quick-start/">Quick Start&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://yumeminami.github.io/blog/configurations/">Configurations&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="extra-guides">Extra Guides&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://hugo-ladder.pages.dev/blog/multi-language/">Multi Language&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://hugo-ladder.pages.dev/blog/comment-system/">Comment System&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://hugo-ladder.pages.dev/blog/analytics/">Analytics&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://hugo-ladder.pages.dev/blog/how-to-integrate-umami-for-free-to-blog-site/">Analytics Umami&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://yumeminami.github.io/blog/multi-language/">Multi Language&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://yumeminami.github.io/blog/comment-system/">Comment System&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://yumeminami.github.io/blog/analytics/">Analytics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://yumeminami.github.io/blog/how-to-integrate-umami-for-free-to-blog-site/">Analytics Umami&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="series-guides">Series Guides&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://guangzhengli.com/blog/en/how-to-create-your-blog-for-free-in-10min/">How to create your blog for free in 10min&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://guangzhengli.com/blog/en/how-to-create-your-blog-for-free-by-hugo-ladder-in-30min/">how-to-create-your-blog-for-free-by-hugo-ladder-in-30min&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Qucik Start</title><link>https://hugo-ladder.pages.dev/blog/quick-start/</link><pubDate>Fri, 19 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://hugo-ladder.pages.dev/blog/quick-start/</guid><description>&lt;p>This article is about how to quickly install and use this theme.&lt;/p>
+&lt;/ul></description></item><item><title>Qucik Start</title><link>https://yumeminami.github.io/blog/quick-start/</link><pubDate>Fri, 19 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://yumeminami.github.io/blog/quick-start/</guid><description>&lt;p>This article is about how to quickly install and use this theme.&lt;/p>
 &lt;h2 id="how-to-install">how to install&lt;/h2>
 &lt;p>Just click &lt;code>Use this template&lt;/code> to create your blog site in &lt;a href="https://github.com/guangzhengli/hugo-ladder-exampleSite">https://github.com/guangzhengli/hugo-ladder-exampleSite&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/guangzhengli/PicURL@master/uPic/4dmtph.png" alt="4dmtph">&lt;/p>
 &lt;p>Create a new repository(GitHub Pages) from hugo-ladder-exampleSite to enter : &lt;code>username.github.io&lt;/code>. &lt;strong>replace the username by your GitHub account.&lt;/strong>&lt;/p>
 &lt;p>Then configure the GitHub page setting following:&lt;/p>
 &lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/guangzhengli/PicURL@master/uPic/nsrExo.png" alt="nsrExo">&lt;/p>
-&lt;p>🎉🎉🎉 Open the browser and enter: &lt;a href="https://username.github.io">https://username.github.io&lt;/a> 🎉🎉🎉&lt;/p></description></item><item><title>Analytics</title><link>https://hugo-ladder.pages.dev/blog/analytics/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://hugo-ladder.pages.dev/blog/analytics/</guid><description>&lt;p>This article is about how to integrate website statistics analysis.&lt;/p>
+&lt;p>🎉🎉🎉 Open the browser and enter: &lt;a href="https://username.github.io">https://username.github.io&lt;/a> 🎉🎉🎉&lt;/p></description></item><item><title>Analytics</title><link>https://yumeminami.github.io/blog/analytics/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://yumeminami.github.io/blog/analytics/</guid><description>&lt;p>This article is about how to integrate website statistics analysis.&lt;/p>
 &lt;h2 id="analytics">Analytics&lt;/h2>
 &lt;h2 id="google-analytics">Google Analytics&lt;/h2>
 &lt;p>Follow &lt;a href="https://gohugo.io/templates/internal/#configure-google-analytics">these steps&lt;/a>.&lt;/p>
@@ -40,7 +40,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">enable&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">website_id&lt;/span>: &lt;span style="color:#ae81ff">data-website-id&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">url&lt;/span>: &lt;span style="color:#ae81ff">https://umami-ochre-nu.vercel.app/hugo-ladder.js&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Comment Systems</title><link>https://hugo-ladder.pages.dev/blog/comment-system/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://hugo-ladder.pages.dev/blog/comment-system/</guid><description>&lt;p>This article is about how to integrate comment systems.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Comment Systems</title><link>https://yumeminami.github.io/blog/comment-system/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://yumeminami.github.io/blog/comment-system/</guid><description>&lt;p>This article is about how to integrate comment systems.&lt;/p>
 &lt;h3 id="comment-systems">Comment Systems&lt;/h3>
 &lt;p>Comments are displayed within post pages and guestbook.&lt;/p>
 &lt;h4 id="giscus">Giscus&lt;/h4>
@@ -64,7 +64,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">enable&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">repo&lt;/span>: &lt;span style="color:#ae81ff">username/reponame&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">issueTerm&lt;/span>: &lt;span style="color:#ae81ff">pathname&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Configurations</title><link>https://hugo-ladder.pages.dev/blog/configurations/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://hugo-ladder.pages.dev/blog/configurations/</guid><description>&lt;p>This article about how to configure this theme, and manage the content of the articles created.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Configurations</title><link>https://yumeminami.github.io/blog/configurations/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://yumeminami.github.io/blog/configurations/</guid><description>&lt;p>This article about how to configure this theme, and manage the content of the articles created.&lt;/p>
 &lt;h2 id="mini-configuration">Mini Configuration&lt;/h2>
 &lt;p>Open the &lt;code>config.yml&lt;/code> file in the root directory with an editor and change the configuration as follows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">baseURL&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;https://hugo-ladder.pages.dev&amp;#39;&lt;/span> &lt;span style="color:#75715e"># set https://username.github.io&lt;/span>
@@ -565,7 +565,7 @@
 &lt;li>&lt;code>tags&lt;/code> tags&lt;/li>
 &lt;li>&lt;code>series&lt;/code> series, it will be show related post below the content.&lt;/li>
 &lt;li>&lt;code>featured&lt;/code> it will be show in home page featured post, &lt;code>true&lt;/code> or &lt;code>false&lt;/code>&lt;/li>
-&lt;/ul></description></item><item><title>How to integrate umami to your website for free</title><link>https://hugo-ladder.pages.dev/blog/how-to-integrate-umami-for-free-to-blog-site/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://hugo-ladder.pages.dev/blog/how-to-integrate-umami-for-free-to-blog-site/</guid><description>&lt;p>This article is about how to integrate &lt;a href="https://umami.is/">umami&lt;/a> website analytics to your website for free. The database use &lt;a href="https://supabase.com/docs/guides/database">postgres&lt;/a> with 500M storage limit provided by &lt;a href="https://app.supabase.com/">supabase&lt;/a>.&lt;/p>
+&lt;/ul></description></item><item><title>How to integrate umami to your website for free</title><link>https://yumeminami.github.io/blog/how-to-integrate-umami-for-free-to-blog-site/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://yumeminami.github.io/blog/how-to-integrate-umami-for-free-to-blog-site/</guid><description>&lt;p>This article is about how to integrate &lt;a href="https://umami.is/">umami&lt;/a> website analytics to your website for free. The database use &lt;a href="https://supabase.com/docs/guides/database">postgres&lt;/a> with 500M storage limit provided by &lt;a href="https://app.supabase.com/">supabase&lt;/a>.&lt;/p>
 &lt;p>The &lt;a href="https://umami.is/">umami&lt;/a> service is hosted with &lt;a href="https://vercel.com/">vercel&lt;/a>. Thanks to the excellent service capabilities of cloud vendors, you can integrate &lt;em>umami&lt;/em> in less than 10 minutes. You can see the umami dashboard by clicking the &lt;a href="https://umami-ochre-nu.vercel.app/share/o3zAba1V/guangzhengli">Dashboard&lt;/a>.&lt;/p>
 &lt;h2 id="create-a-database">Create a database&lt;/h2>
 &lt;p>The database use &lt;a href="https://supabase.com/docs/guides/database">postgres&lt;/a> with 500M storage limit provided by &lt;a href="https://app.supabase.com/">supabase&lt;/a>. You can create a supabase account, click &lt;code>new project&lt;/code>, and enter the database passowrd to create an ProgresSQL database service.&lt;/p>
@@ -609,7 +609,7 @@
 &lt;p>Then you can get &lt;code>data-website-id&lt;/code> and &lt;code>src&lt;/code> values by click &lt;code>Get tracking code&lt;/code>，enter the value to the &lt;code>hugo-ladder&lt;/code> configuration &lt;code>params.analytics.umami.website_id&lt;/code> , &lt;code>params.analytics.umami.url&lt;/code>.&lt;/p>
 &lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/guangzhengli/PicURL@master/uPic/OZcU7U.png" alt="OZcU7U">&lt;/p>
 &lt;p>In the end, you can get the website statistics analytics dashboard.🎉🎉🎉&lt;/p>
-&lt;p>Link to original article: &lt;a href="https://guangzhengli.com/en/blog/en/how-to-integrate-umami-for-free-to-blog-site/">https://guangzhengli.com/en/blog/en/how-to-integrate-umami-for-free-to-blog-site/&lt;/a>&lt;/p></description></item><item><title>Multi language support</title><link>https://hugo-ladder.pages.dev/blog/multi-language/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://hugo-ladder.pages.dev/blog/multi-language/</guid><description>&lt;p>This article is about multilingual support.&lt;/p>
+&lt;p>Link to original article: &lt;a href="https://guangzhengli.com/en/blog/en/how-to-integrate-umami-for-free-to-blog-site/">https://guangzhengli.com/en/blog/en/how-to-integrate-umami-for-free-to-blog-site/&lt;/a>&lt;/p></description></item><item><title>Multi language support</title><link>https://yumeminami.github.io/blog/multi-language/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>iguangzhengli@gmail.com (Guangzheng Li)</author><guid>https://yumeminami.github.io/blog/multi-language/</guid><description>&lt;p>This article is about multilingual support.&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="#available-languages">Available Languages&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#configure-languages">Configure languages&lt;/a>&lt;/li>
