@@ -1,10 +1,10 @@
-baseURL: 'https://hugo-ladder.pages.dev'
+baseURL: 'https://yumeminami.github.io/'
 title: LADDER
 theme: hugo-theme-ladder
 license: MIT
 licenselink: 'https://github.com/guangzhengli/hugo-theme-ladder/blob/master/LICENSE'
 description: 'A fast, clean Hugo theme'
-homepage: 'https://hugo-ladder.pages.dev'
+homepage: 'https://yumeminami.github.io/'
 defaultContentLanguage: 'en'
 googleAnalytics: G-4WXJ5TEK2S
 paginate: 10
