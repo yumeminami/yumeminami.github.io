@@ -2,7 +2,7 @@ baseURL: 'https://yumeminami.github.io/'
 title: LADDER
 theme: hugo-theme-ladder
 license: MIT
-licenselink: 'https://github.com/guangzhengli/hugo-theme-ladder/blob/master/LICENSE'
+licenselink: 'https://github.com/yumeminami/yumeminami.github.io/blob/master/LICENSE'
 description: 'A fast, clean Hugo theme'
 homepage: 'https://yumeminami.github.io/'
 defaultContentLanguage: 'en'
@@ -30,9 +30,9 @@ menu:
     - name: Guest
       url: /guestbook
       weight: 5
-    # - name: Monitor
-    #   url: https://umami-ochre-nu.vercel.app/share/o3zAba1V/guangzhengli
-    #   weight: 6
+    - name: Monitor
+      url: https://umam1.vercel.app/share/lamWiNjw1LEyKQUb/yumeminami-blog
+      weight: 6
 params:
   brand: HOME
   avatarURL: /images/pipi.jpg
@@ -92,7 +92,7 @@ params:
     - name: Dashboard
       pre: >-
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-      url: 'https://umami-ochre-nu.vercel.app/share/R1lHz7QY/hugo-ladder-exampleSite'
+      url: 'https://umam1.vercel.app/share/lamWiNjw1LEyKQUb/yumeminami-blog'
 languages:
   en:
     languageName: EN
@@ -121,9 +121,9 @@ languages:
         - name: 留言板
           url: /guestbook
           weight: 4
-        # - name: 统计
-        #   url: https://umami-ochre-nu.vercel.app/share/o3zAba1V/guangzhengli
-        #   weight: 5
+        - name: 统计
+          url: https://umam1.vercel.app/share/lamWiNjw1LEyKQUb/yumeminami-blog
+          weight: 5
 taxonomies:
   series: series
   tag: tags
