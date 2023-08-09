@@ -63,10 +63,10 @@ params:
   comments:
     giscus:
       enable: true
-      repo: guangzhengli/hugo-ladder-exampleSite
-      repo_id: R_kgDOHyVOjg
+      repo: yumeminami/yumeminami.github.io
+      repo_id: R_kgDOKErlsQ
       category: Announcements
-      category_id: DIC_kwDOHyVOjs4CQsH7
+      category_id: DIC_kwDOKErlsc4CYd6o
       mapping: pathname
       position: top
       lang: en # pick a language from https://github.com/giscus/giscus/tree/main/locales
