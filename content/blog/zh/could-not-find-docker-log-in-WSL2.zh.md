@@ -77,11 +77,11 @@ featured: true
    
    原因如下：
 
-   ![image](https://github.com/yumeminami/yumeminami.github.io/blob/master/content/static/images/77fc7dd5dda9c12f60e589b82d5d7e3.png)
+   ![image](https://github.com/yumeminami/yumeminami.github.io/blob/master/content/static/images/77fc7dd5dda9c12f60e589b82d5d7e3.png?raw=true)
 
     於是就去文件管理器中查看WSL2的文件路徑，發現原來Docker的日志文件路徑是在Windows的文件系統中，而不是在WSL2的文件系統中
 
-    ![image](https://github.com/yumeminami/yumeminami.github.io/blob/master/content/static/images/87bd14d7d50457d610fa920757d408a.png)
+    ![image](https://github.com/yumeminami/yumeminami.github.io/blob/f226ae091683e6b691ce84f462e84dc4ec078836/content/static/images/87bd14d7d50457d610fa920757d408a.png?raw=true)
 
 4. 在WSL2下嘗試訪問此路徑
 
@@ -127,7 +127,11 @@ ubuntu@DESKTOP-HH3PJAQ:/mnt/docker/data/docker/containers$ ls
 ### 參考文檔
 
 [在 WSL 2 上開始使用 Docker 遠端容器](https://learn.microsoft.com/zh-tw/windows/wsl/tutorials/wsl-containers)
+
 [WSL2 where is docker volume location? ](https://github.com/microsoft/WSL/discussions/4176)
+
 [如何挂載Docker路徑到WSL2中](https://github.com/microsoft/WSL/discussions/4176#discussioncomment-831817)
+
 [where can I find Docker in windows 10 ?](https://stackoverflow.com/questions/56518032/windows-10-and-docker-container-logs-docker-logging-driver)
+
 [WINDOWS 10 LOCATION FOR DOCKER VOLUMES AND CONTAINER LOGS](https://reachmnadeem.wordpress.com/2021/02/14/windows-10-location-for-docker-volumes-and-container-logs/)
