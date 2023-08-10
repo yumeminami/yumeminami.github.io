@@ -55,9 +55,9 @@ cat: /var/lib/docker/containers/e2672e782614ed962050ac43c0691d1abe4bd753911b7429
 &lt;li>
 &lt;p>搜索微軟官方關於WSL2文檔：&lt;/p>
 &lt;p>原因如下：&lt;/p>
-&lt;p>&lt;img src="../../static/images/77fc7dd5dda9c12f60e589b82d5d7e3.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://github.com/yumeminami/yumeminami.github.io/blob/master/content/static/images/77fc7dd5dda9c12f60e589b82d5d7e3.png" alt="image">&lt;/p>
 &lt;p>於是就去文件管理器中查看WSL2的文件路徑，發現原來Docker的日志文件路徑是在Windows的文件系統中，而不是在WSL2的文件系統中&lt;/p>
-&lt;p>&lt;img src="../../static/images/87bd14d7d50457d610fa920757d408a.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="https://github.com/yumeminami/yumeminami.github.io/blob/master/content/static/images/87bd14d7d50457d610fa920757d408a.png" alt="image">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>在WSL2下嘗試訪問此路徑&lt;/p>
@@ -86,11 +86,11 @@ ubuntu@DESKTOP-HH3PJAQ:/mnt/docker/data/docker/containers$ ls
 &lt;/code>&lt;/pre>&lt;p>至此問題已經解決，只需在docker-compose的filebeat配置文件中做好日志的映射即可。
 遺留問題：使用inspect命令得到的路徑到底從何而來呢？&lt;/p>
 &lt;h3 id="參考文檔">參考文檔&lt;/h3>
-&lt;p>&lt;img src="https://learn.microsoft.com/zh-tw/windows/wsl/tutorials/wsl-containers" alt="在 WSL 2 上開始使用 Docker 遠端容器">
-&lt;img src="https://github.com/microsoft/WSL/discussions/4176" alt="WSL2 where is docker volume location? ">
-&lt;img src="https://github.com/microsoft/WSL/discussions/4176#discussioncomment-831817" alt="如何挂載Docker路徑到WSL2中">
-&lt;img src="https://stackoverflow.com/questions/56518032/windows-10-and-docker-container-logs-docker-logging-driver" alt="where can I find Docker in windows 10 ?">
-&lt;img src="https://reachmnadeem.wordpress.com/2021/02/14/windows-10-location-for-docker-volumes-and-container-logs/" alt="WINDOWS 10 LOCATION FOR DOCKER VOLUMES AND CONTAINER LOGS">&lt;/p></description></item><item><title>ELK Collect Docker Logs</title><link>https://yumeminami.github.io/blog/elk-collect-docker-logs/</link><pubDate>Tue, 08 Aug 2023 17:07:10 +0800</pubDate><author>fengrongman@gmail.com (Wingmun Fung)</author><guid>https://yumeminami.github.io/blog/elk-collect-docker-logs/</guid><description>&lt;p>HELLO EVERYONE&lt;/p></description></item><item><title>Ladder Guide</title><link>https://yumeminami.github.io/blog/ladder-guide/</link><pubDate>Sat, 20 Aug 2022 21:34:36 +0800</pubDate><author>fengrongman@gmail.com (Wingmun Fung)</author><guid>https://yumeminami.github.io/blog/ladder-guide/</guid><description>&lt;p>This article is a link to all the tutorials.&lt;/p>
+&lt;p>&lt;a href="https://learn.microsoft.com/zh-tw/windows/wsl/tutorials/wsl-containers">在 WSL 2 上開始使用 Docker 遠端容器&lt;/a>
+&lt;a href="https://github.com/microsoft/WSL/discussions/4176">WSL2 where is docker volume location? &lt;/a>
+&lt;a href="https://github.com/microsoft/WSL/discussions/4176#discussioncomment-831817">如何挂載Docker路徑到WSL2中&lt;/a>
+&lt;a href="https://stackoverflow.com/questions/56518032/windows-10-and-docker-container-logs-docker-logging-driver">where can I find Docker in windows 10 ?&lt;/a>
+&lt;a href="https://reachmnadeem.wordpress.com/2021/02/14/windows-10-location-for-docker-volumes-and-container-logs/">WINDOWS 10 LOCATION FOR DOCKER VOLUMES AND CONTAINER LOGS&lt;/a>&lt;/p></description></item><item><title>Ladder Guide</title><link>https://yumeminami.github.io/blog/ladder-guide/</link><pubDate>Sat, 20 Aug 2022 21:34:36 +0800</pubDate><author>fengrongman@gmail.com (Wingmun Fung)</author><guid>https://yumeminami.github.io/blog/ladder-guide/</guid><description>&lt;p>This article is a link to all the tutorials.&lt;/p>
 &lt;h2 id="basic-usage">Basic Usage&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://yumeminami.github.io/blog/quick-start/">Quick Start&lt;/a>&lt;/li>
