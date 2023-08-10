@@ -5,7 +5,7 @@ license: MIT
 licenselink: 'https://github.com/yumeminami/yumeminami.github.io/blob/master/LICENSE'
 description: 'A cute, beautiful, dumb cat.'
 homepage: 'https://yumeminami.github.io/'
-defaultContentLanguage: 'zh'
+defaultContentLanguage: 'en'
 googleAnalytics: G-4WXJ5TEK2S
 paginate: 10
 hasCJKLanguage: true
