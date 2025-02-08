@@ -35,10 +35,10 @@ menu:
       weight: 6
 params:
   brand: HOME
-  avatarURL: /images/pipi.jpg
-  author: PiPi
+  avatarURL: /images/baobao.jpeg
+  author: Baobao
   authorDescription: A cute, beautiful, dumb cat.
-  info: My name is PiPi and my mother is pigpig and my father is tutu. We are a happy family.
+  info: My name is Baobao.
   favicon: /images/avatar.png
   options:
     showDarkMode: true
@@ -98,9 +98,9 @@ languages:
     languageName: EN
   zh:
     languageName: 中
-    author: 皮皮
-    authorDescription: 我是一直大笨猫
-    info: 我叫皮皮，是一只可爱的本猫，我妈妈是猪猪，爸爸是兔兔，是相亲相爱的一家人
+    author: 包包
+    authorDescription: 我是一只大笨猫
+    info: 我叫包包，是一只可爱的笨猫
     guestbook:
       title: 留言板
       description: 您的评论，会让该网站更精彩！
