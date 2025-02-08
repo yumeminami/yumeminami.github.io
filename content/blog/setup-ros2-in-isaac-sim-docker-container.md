@@ -8,6 +8,7 @@ featured: true
 
 This article is about how to setup ROS2 in Isaac Sim Docker Container.
 
+<!--more-->
 ## Prerequisites
 
 - Docker
