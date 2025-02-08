@@ -6,6 +6,8 @@ series: []
 featured: true
 ---
 
+This article is about how to setup ROS2 in Isaac Sim Docker Container.
+
 ## Prerequisites
 
 - Docker
@@ -110,7 +112,3 @@ data: Hello from Isaac Sim internal ROS2!
 - Make sure the ROS_DOMAIN_ID is the same as the host.
 - Make sure the network of the host and the container are the same.
 - Make sure the DDS is the same configuration.
-
-
-
-
