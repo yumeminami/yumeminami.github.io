@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on YUMEMINAMI</title><link>https://yumeminami.github.io/blog/</link><description>Recent content in Blogs on YUMEMINAMI</description><generator>Hugo -- gohugo.io</generator><managingEditor>fengrongman@gmail.com (Wingmun Fung)</managingEditor><webMaster>fengrongman@gmail.com (Wingmun Fung)</webMaster><copyright>2023 Wingmun Fung All rights reserved</copyright><lastBuildDate>Sun, 14 Aug 2022 21:34:36 +0800</lastBuildDate><atom:link href="https://yumeminami.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Configurations</title><link>https://yumeminami.github.io/blog/configurations/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>fengrongman@gmail.com (Wingmun Fung)</author><guid>https://yumeminami.github.io/blog/configurations/</guid><description>&lt;p>This article about how to configure this theme, and manage the content of the articles created.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on YUMEMINAMI</title><link>https://yumeminami.github.io/blog/</link><description>Recent content in Blogs on YUMEMINAMI</description><generator>Hugo -- gohugo.io</generator><managingEditor>fengrongman@gmail.com (Wingmun Fung)</managingEditor><webMaster>fengrongman@gmail.com (Wingmun Fung)</webMaster><copyright>2023 Wingmun Fung All rights reserved</copyright><lastBuildDate>Fri, 07 Feb 2025 14:39:00 +0000</lastBuildDate><atom:link href="https://yumeminami.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Setup ROS2 in Isaac Sim Docker Container</title><link>https://yumeminami.github.io/blog/setup-ros2-in-isaac-sim-docker-container/</link><pubDate>Fri, 07 Feb 2025 14:39:00 +0000</pubDate><author>fengrongman@gmail.com (Wingmun Fung)</author><guid>https://yumeminami.github.io/blog/setup-ros2-in-isaac-sim-docker-container/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>Docker&lt;/li>
+&lt;li>Isaac Sim Docker Image&lt;/li>
+&lt;/ul>
+&lt;h2 id="steps">Steps&lt;/h2>
+&lt;ol>
+&lt;li>Start the Isaac Sim Docker Container&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>docker run --name isaac-sim --entrypoint bash -it --runtime&lt;span style="color:#f92672">=&lt;/span>nvidia --gpus all -e &lt;span style="color:#e6db74">&amp;#34;ACCEPT_EULA=Y&amp;#34;&lt;/span> --rm --network&lt;span style="color:#f92672">=&lt;/span>host &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> -e &lt;span style="color:#e6db74">&amp;#34;PRIVACY_CONSENT=Y&amp;#34;&lt;/span> &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> -v ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> -v ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> -v ~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> -v ~/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> -v ~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> -v ~/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> -v ~/docker/isaac-sim/data:/root/.local/share/ov/data:rw &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> -v ~/docker/isaac-sim/documents:/root/Documents:rw &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> nvcr.io/nvidia/isaac-sim:4.5.0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
+&lt;li>Step up ROS2 environment&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;export LD_LIBRARY_PATH=&lt;/span>$LD_LIBRARY_PATH&lt;span style="color:#e6db74">:/isaac-sim/exts/omni.isaac.ros2_bridge/humble/lib&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;export PYTHONPATH=/isaac-sim/exts/omni.isaac.ros2_bridge/humble/rclpy/:&lt;/span>$PYTHONPATH&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;export RMW_IMPLEMENTATION=rmw_fastrtps_cpp&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;export FASTRTPS_DEFAULT_PROFILES_FILE=~/.ros/fastdds.xml&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>Create DDS profile file&lt;/li>
+&lt;/ol>
+&lt;p>copy the following content to &lt;code>~/.ros/fastdds.xml&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34; ?&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;license&amp;gt;&lt;/span>Copyright (c) 2022-2024, NVIDIA CORPORATION. All rights reserved.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>NVIDIA CORPORATION and its licensors retain all intellectual property
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>and proprietary rights in and to this software, related documentation
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>and any modifications thereto. Any use, reproduction, disclosure or
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>distribution of this software and related documentation without an express
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>license agreement from NVIDIA CORPORATION is strictly prohibited.&lt;span style="color:#f92672">&amp;lt;/license&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;profiles&lt;/span> &lt;span style="color:#a6e22e">xmlns=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;transport_descriptors&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;transport_descriptor&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;transport_id&amp;gt;&lt;/span>UdpTransport&lt;span style="color:#f92672">&amp;lt;/transport_id&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;type&amp;gt;&lt;/span>UDPv4&lt;span style="color:#f92672">&amp;lt;/type&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/transport_descriptor&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/transport_descriptors&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;participant&lt;/span> &lt;span style="color:#a6e22e">profile_name=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;udp_transport_profile&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">is_default_profile=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;true&amp;#34;&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;rtps&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;userTransports&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;transport_id&amp;gt;&lt;/span>UdpTransport&lt;span style="color:#f92672">&amp;lt;/transport_id&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/userTransports&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;useBuiltinTransports&amp;gt;&lt;/span>false&lt;span style="color:#f92672">&amp;lt;/useBuiltinTransports&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/rtps&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;lt;/participant&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;/profiles&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>Test ROS2 in Isaac Sim&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>export ROS_DOMAIN_ID&lt;span style="color:#f92672">=&lt;/span>&amp;lt;your_domain_id&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>./python.sh ros_node.py &lt;span style="color:#75715e"># the script is located in the /isaac-sim&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>INFO&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>1738997353.194031795&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>test_node&lt;span style="color:#f92672">]&lt;/span>: Published: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>INFO&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>1738997354.188423330&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>test_node&lt;span style="color:#f92672">]&lt;/span>: Published: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>INFO&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>1738997355.188394277&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>test_node&lt;span style="color:#f92672">]&lt;/span>: Published: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>INFO&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>1738997356.188390781&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>test_node&lt;span style="color:#f92672">]&lt;/span>: Published: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>INFO&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>1738997357.188404718&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>test_node&lt;span style="color:#f92672">]&lt;/span>: Published: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">[&lt;/span>INFO&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>1738997358.188400347&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>test_node&lt;span style="color:#f92672">]&lt;/span>: Published: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
+&lt;li>Test ROS2 LAN communication&lt;/li>
+&lt;/ol>
+&lt;p>The &lt;code>isaac-sim&lt;/code> container does not provide &lt;code>ros2&lt;/code> command, so you need to use the host or other containers which have ROS2 installed.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ros2 topic echo /test_topic
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>data: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>data: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>data: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>data: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>data: Hello from Isaac Sim internal ROS2!
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>NOTE:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Make sure the ROS_DOMAIN_ID is the same as the host.&lt;/li>
+&lt;li>Make sure the network of the host and the container are the same.&lt;/li>
+&lt;li>Make sure the DDS is the same configuration.&lt;/li>
+&lt;/ul></description></item><item><title>Configurations</title><link>https://yumeminami.github.io/blog/configurations/</link><pubDate>Sun, 14 Aug 2022 21:34:36 +0800</pubDate><author>fengrongman@gmail.com (Wingmun Fung)</author><guid>https://yumeminami.github.io/blog/configurations/</guid><description>&lt;p>This article about how to configure this theme, and manage the content of the articles created.&lt;/p>
 &lt;h2 id="mini-configuration">Mini Configuration&lt;/h2>
 &lt;p>Open the &lt;code>config.yml&lt;/code> file in the root directory with an editor and change the configuration as follows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">baseURL&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;https://hugo-ladder.pages.dev&amp;#39;&lt;/span> &lt;span style="color:#75715e"># set https://username.github.io&lt;/span>
